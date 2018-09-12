@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.3.1-web/css/all.min.css">
     <script type="text/javascript" src="../js/angular.min.js"></script>
     <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
     <script src="../controllers/ingreso.controler.js"></script>
     <title>Asignacion de Equipos</title>
     <h1 class="text-center">Asignacion de Equipos</h1>
 </head>
+
 <body>
     <div class="container-fluid">
         <p>Seleccione el tipo de equipo:</p>
@@ -28,51 +30,52 @@
                     <option value="SmartPhone">Smart Phone</option>
                     <option value="ModemInternet">Modem de Internet</option>
                 </select><br>
-                <button type="button" class="btn btn-outline-info">&#xf067; Consultar</button>
+                <button type="button" class="btn btn-outline-info"><i class="fas fa-search"></i> Consultar</button>
             </div>
         </div>
-      <p style="margin-top: 15px">Listado de los equipos Asignados:</p>
+        <p style="margin-top: 15px">Listado de los equipos Asignados:</p>
         <div class="row">
             <div class="table-responsive">
                 <table class="table">
                     <thead class="thead-dark">
-                      <tr>
-                        <th scope="col">No#</th>
-                        <th scope="col">Responsable</th>
-                        <th scope="col">Equipo</th>
-                        <th scope="col">Codigo Interno</th>
-                        <th scope="col">Ciudad de Ubicacion</th>
-                        <th scope="col">Descripcion</th>
-                        <th scope="col">Marca</th>
-                        <th scope="col">Modelo</th>
-                        <th scope="col">Serie</th>
-                        <th scope="col">Observaciones</th>
-                        <th scope="col">Tiempo Asignado</th>
-                      </tr>
+                        <tr>
+                            <th scope="col">No#</th>
+                            <th scope="col">Responsable</th>
+                            <th scope="col">Equipo</th>
+                            <th scope="col">Codigo Interno</th>
+                            <th scope="col">Ciudad de Ubicacion</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">Marca</th>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Serie</th>
+                            <th scope="col">Observaciones</th>
+                            <th scope="col">Tiempo Asignado</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>UIO-EC-CPU-01</td>
-                        <td>Quito</td>
-                        <td>Persona1</td>
-                        <td>Persona1</td>
-                        <td>Persona1</td>
-                        <td>Persona1</td>
-                        <td>Persona1</td>
-                        <td>Persona1</td>
-                        <td>Persona1</td>
-                        <td>Persona1</td>
-                      </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>UIO-EC-CPU-01</td>
+                            <td>Quito</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                        </tr>
                     </tbody>
-                  </table>
+                </table>
             </div>
         </div>
     </div>
 </body>
 <footer style="margin-top: 15px">
-        <button type="button" class="btn btn-outline-success">&#xf067; Ingresar</button>
-        <button type="button" class="btn btn-outline-warning">&#xf24d; Modificar</button>
-        <button type="button" class="btn btn-outline-danger">&#xf00d; Eliminar</button>
+    <button type="button" class="btn btn-outline-success"><i class="fas fa-plus"></i> Ingresar</button>
+    <button type="button" class="btn btn-outline-warning"><i class="far fa-file-alt"></i> Modificar</button>
+    <button type="button" class="btn btn-outline-danger"><i class="fas fa-times"></i> Eliminar</button>
 </footer>
+
 </html>
