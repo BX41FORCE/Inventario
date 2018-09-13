@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="../css/bootstrap-4.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome-free-5.3.1-web/css/all.min.css">
     <script type="text/javascript" src="../JS/angular.min.js"></script>
-    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="../css/bootstrap-4.1.3/dist/js/bootstrap.js"></script>
     <script src="../controllers/ingreso.controler.js"></script>
     <title>Asignacion de Equipos</title>
     <h1 class="text-center text-light" style="background-color:#3072AC;">Asignacion de Equipos</h1>
@@ -72,9 +70,80 @@
             </div>
         </div>
     </div>
+
+    <div class="container mt-3">
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center" id="myModalLabel">Ingrese el nuevo equipo</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Codigo Interno:</h5>
+                    <input class="form-control" type="text" maxlength="15" value="Ingrese el codigo">
+      
+                    <h5>Ciudad de Ubicacion</h5>
+                    <select class="form-control">
+                        <option value="Quito">Quito</option>
+                        <option value="Ambato">Ambato</option>
+                        <option value="Riobamba">Riobamba</option>
+                    </select>
+      
+                    <h5>Responsable</h5>
+                    <select class="form-control">
+                          <option value="Persona1">Persona1</option>
+                          <option value="Persona2">Persona2</option>
+                      </select>
+      
+                      <h5>Descripcion</h5>
+                      <input class="form-control" type="text" maxlength="30" value="De una brebe descripcion">
+                      
+                      <h5>Marca</h5>
+                      <input class="form-control" type="text" maxlength="10" value="Ingrese la marca">
+
+                      <h5>Modelo</h5>
+                      <input class="form-control" type="text" maxlength="10" value="Ingrese el modelo">
+      
+                      <h5>Serie</h5>
+                      <input class="form-control" type="text" maxlength="10" value="Ingrese la serie">
+      
+                      <h5>Particularidad</h5>
+                      <input class="form-control" type="text" maxlength="10">
+                      
+                      <h5>No# de factura</h5>
+                      <input class="form-control" type="text" maxlength="10">
+                      
+                      <h5>Valor de la factura</h5>
+                      <input class="form-control" type="number" maxlength="10">
+                      
+                      <h5>Fecha de adquisicion</h5>
+                      <input class="form-control" type="date" maxlength="10">
+      
+                      <h5>Observaciones</h5>
+                      <textarea class="form-control" maxlength="100"></textarea>
+      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <script type="text/javascript" src="../css/bootstrap-4.1.3/dist/js/bootstrap.js"></script>
+    <script src="../js/jquery-slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/dist/util.js"></script>
+    <script src="../js/dist/modal.js"></script>
+    <script src="../js/dist/collapse.js"></script>
+    <script src="../js/dist/tooltip.js"></script>
+    <script src="../js/dist/popover.js"></script>
 </body>
 <footer style="margin-top: 15px">
-    <button type="button" class="btn btn-outline-success"><i class="fas fa-plus"></i> Asignar</button>
+    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal"><i class="fas fa-plus"></i> Asignar</button>
     <button type="button" class="btn btn-outline-warning"><i class="far fa-file-alt"></i> Modificar</button>
     <button type="button" class="btn btn-outline-danger"><i class="fas fa-times"></i> Eliminar</button>
 </footer>
