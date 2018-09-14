@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es" ng-app>
 
@@ -13,279 +14,210 @@
     <title>Ingreso de Equipos</title>
     <style>
       #tall {
+=======
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap-4.1.3/dist/css/bootstrap.min.css">
+    <!DOCTYPE html>
+    <html lang="es" ng-app>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/bootstrap-4.1.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/fontawesome-free-5.3.1-web/css/all.min.css">
+        <script type="text/javascript" src="../JS/angular.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="../css/bootstrap-4.1.3/dist/js/bootstrap.js"></script>
+        <script src="../controllers/ingreso.controler.js"></script>
+        <title>Ingreso de Equipos</title>
+        <style>
+            #tall {
+>>>>>>> 5a35898ee8eec5932eca66928b5992d6016bf8ca
         height: 1500px;
         width: 100px;
       }
     </style>
-    <h1 class="text-center  text-light" style="background-color:#3072AC;"> Ingreso de equipos</h1>
-  </head>
-  <body>
+        <h1 class="text-center  text-light" style="background-color:#3072AC;"> Ingreso de equipos</h1>
+    </head>
+
+<body>
 
     <div class="container-fluid">
-            <p>Seleccione el tipo de equipo:</p>
-            <div class="row">
-                <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                    <select class="form-control">
-                        <option value="CPU">CPU</option>
-                        <option value="Laptop">Laptop</option>
-                        <option value="Monitor">Monitor</option>
-                        <option value="Scaner">Scaner</option>
-                        <option value="Impresora">Impresora</option>
-                        <option value="DiscoDuro">Disco Duro Externo</option>
-                        <option value="Tablet">Tablet</option>
-                        <option value="SmartPhone">Smart Phone</option>
-                        <option value="ModemInternet">Modem de Internet</option>
-                    </select><br>
-                    <button type="button" class="btn btn-outline-info"><i class="fas fa-search"></i> Consultar</button>
-                </div>
-            </div>
-            <p style="margin-top: 15px">Listado de los equipos Ingresados:</p>
-            <div class="row">
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead class="thead text-light" style="background-color:#3072AC;">
-                            <tr>
-                                <th scope="col">No#</th>
-                                <th scope="col">Codigo Interno</th>
-                                <th scope="col">Ciudad de Ubicacion</th>
-                                <th scope="col">Responsable</th>
-                                <th scope="col">Descripcion</th>
-                                <th scope="col">Memoria Ram</th>
-                                <th scope="col">Procesador</th>
-                                <th scope="col">Disco Duro</th>
-                                <th scope="col">Sistema Operativo</th>
-                                <th scope="col">Licenciado</th>
-                                <th scope="col">Office</th>
-                                <th scope="col">Marca</th>
-                                <th scope="col">Modelo</th>
-                                <th scope="col">Serie</th>
-                                <th scope="col">Particularidad</th>
-                                <th scope="col">No# Factura</th>
-                                <th scope="col">Valor Factura</th>
-                                <th scope="col">Fecha de Adquisicion</th>
-                                <th scope="col">Observaciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>UIO-EC-CPU-01</td>
-                                <td>Quito</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                                <td>Persona1</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <p>Seleccione el tipo de equipo:</p>
+        <div class="row">
+            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <select class="form-control">
+                    <option value="CPU">CPU</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Scaner">Scaner</option>
+                    <option value="Impresora">Impresora</option>
+                    <option value="DiscoDuro">Disco Duro Externo</option>
+                    <option value="Tablet">Tablet</option>
+                    <option value="SmartPhone">Smart Phone</option>
+                    <option value="ModemInternet">Modem de Internet</option>
+                </select><br>
+                <button type="button" class="btn btn-outline-info"><i class="fas fa-search"></i> Consultar</button>
             </div>
         </div>
+        <p style="margin-top: 15px">Listado de los equipos Ingresados:</p>
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead text-light" style="background-color:#3072AC;">
+                        <tr>
+                            <th scope="col">No#</th>
+                            <th scope="col">Codigo Interno</th>
+                            <th scope="col">Ciudad de Ubicacion</th>
+                            <th scope="col">Responsable</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">Memoria Ram</th>
+                            <th scope="col">Procesador</th>
+                            <th scope="col">Disco Duro</th>
+                            <th scope="col">Sistema Operativo</th>
+                            <th scope="col">Licenciado</th>
+                            <th scope="col">Office</th>
+                            <th scope="col">Marca</th>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Serie</th>
+                            <th scope="col">Particularidad</th>
+                            <th scope="col">No# Factura</th>
+                            <th scope="col">Valor Factura</th>
+                            <th scope="col">Fecha de Adquisicion</th>
+                            <th scope="col">Observaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>UIO-EC-CPU-01</td>
+                            <td>Quito</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                            <td>Persona1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
 
     <div class="container mt-3">
-      <div class="modal fade" id="Ingreso" tabindex="-1" role="dialog" aria-labelledby="ingresoLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header" style="background-color:#3072AC;">
-              <h4 class="modal-title text-light" id="ingresolLabel">Ingrese el nuevo equipo</h4>
-            </div>
-            <div class="modal-body">
-              <h5>Codigo Interno:</h5>
-              <input class="form-control" type="text" maxlength="15" placeholder="Ingrese el codigo">
-
-              <h5>Ciudad de Ubicacion</h5>
-              <select class="form-control">
-                  <option value="Quito">Quito</option>
-                  <option value="Ambato">Ambato</option>
-                  <option value="Riobamba">Riobamba</option>
-              </select>
-
-              <h5>Responsable</h5>
-              <select class="form-control">
-                    <option value="Persona1">Persona1</option>
-                    <option value="Persona2">Persona2</option>
-                </select>
-
-                <h5>Descripcion</h5>
-                <input class="form-control" type="text" maxlength="30" placeholder="De una brebe descripcion">
-
-                <h5>Memoria Ram</h5>
-                <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la cantidad">
-
-                <h5>Procesador</h5>
-                <input class="form-control" type="text" maxlength="25" placeholder="Ingrese el modelo">
-
-                <h5>Disco Duro</h5>
-                <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el tamaño">
-
-                <h5>Sistema operativo</h5>
-               <select class="form-control">
-                    <option value="Windows">Windows</option>
-                    <option value="MacOS">Mac OS</option>
-                </select>
-                <h5>Licenciado</h5>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="Si">Si</label><br>
-                        <label><input type="checkbox" value="No">No</label>
+        <div class="modal fade" id="Ingreso" tabindex="-1" role="dialog" aria-labelledby="ingresoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#3072AC;">
+                        <h4 class="modal-title text-light" id="ingresolLabel">Ingrese el nuevo equipo</h4>
                     </div>
+                    <div class="modal-body">
+                        <h5>Codigo Interno:</h5>
+                        <input class="form-control" type="text" maxlength="15" placeholder="Ingrese el codigo">
 
-                <h5>Office</h5>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="Si">Si</label><br>
-                    <label><input type="checkbox" value="No">No</label>
+                        <h5>Ciudad de Ubicacion</h5>
+                        <select class="form-control">
+                            <option value="Quito">Quito</option>
+                            <option value="Ambato">Ambato</option>
+                            <option value="Riobamba">Riobamba</option>
+                        </select>
+
+                        <h5>Responsable</h5>
+                        <select class="form-control">
+                            <option value="Persona1">Persona1</option>
+                            <option value="Persona2">Persona2</option>
+                        </select>
+
+                        <h5>Descripcion</h5>
+                        <input class="form-control" type="text" maxlength="30" placeholder="De una brebe descripcion">
+
+                        <h5>Memoria Ram</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la cantidad">
+
+                        <h5>Procesador</h5>
+                        <input class="form-control" type="text" maxlength="25" placeholder="Ingrese el modelo">
+
+                        <h5>Disco Duro</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el tamaño">
+
+                        <h5>Sistema operativo</h5>
+                        <select class="form-control">
+                            <option value="Windows">Windows</option>
+                            <option value="MacOS">Mac OS</option>
+                        </select>
+                        <h5>Licenciado</h5>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Si">Si</label><br>
+                            <label><input type="checkbox" value="No">No</label>
+                        </div>
+
+                        <h5>Office</h5>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Si">Si</label><br>
+                            <label><input type="checkbox" value="No">No</label>
+                        </div>
+
+                        <h5>Marca</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la marca">
+
+                        <h5>Modelo</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el modelo">
+
+                        <h5>Serie</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la serie">
+
+                        <h5>Particularidad</h5>
+                        <input class="form-control" type="text" maxlength="10">
+
+                        <h5>No# de factura</h5>
+                        <input class="form-control" type="text" maxlength="10">
+
+                        <h5>Valor de la factura</h5>
+                        <input class="form-control" type="number" maxlength="10">
+
+                        <h5>Fecha de adquisicion</h5>
+                        <input class="form-control" type="date" maxlength="10">
+
+                        <h5>Observaciones</h5>
+                        <textarea class="form-control" maxlength="100"></textarea>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
                 </div>
-
-                <h5>Marca</h5>
-                <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la marca">
-
-                <h5>Modelo</h5>
-                <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el modelo">
-
-                <h5>Serie</h5>
-                <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la serie">
-
-                <h5>Particularidad</h5>
-                <input class="form-control" type="text" maxlength="10">
-                
-                <h5>No# de factura</h5>
-                <input class="form-control" type="text" maxlength="10">
-                
-                <h5>Valor de la factura</h5>
-                <input class="form-control" type="number" maxlength="10">
-                
-                <h5>Fecha de adquisicion</h5>
-                <input class="form-control" type="date" maxlength="10">
-
-                <h5>Observaciones</h5>
-                <textarea class="form-control" maxlength="100"></textarea>
-
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <div class="container mt-3">
 
         <div class="modal fade" id="Modificar" tabindex="-1" role="dialog" aria-labelledby="modificarLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color:#3072AC;">
-                <h4 class="modal-title text-light" id="modificarLabel">Selecione el registro que desea modificar</h4>
-                </div>
-                <div class="modal-body">
-                    <h5>No# de registro</h5>
-                    <select class="form-control">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                    <button type="button" class="btn btn-info" style="margin-top: 5px">Consultar</button>
-                    <hr> 
-                
-                <h5>Codigo Interno:</h5>
-                <input class="form-control" type="text" maxlength="15" placeholder="Ingrese el codigo">
-    
-                <h5>Ciudad de Ubicacion</h5>
-                <select class="form-control">
-                    <option value="Quito">Quito</option>
-                    <option value="Ambato">Ambato</option>
-                    <option value="Riobamba">Riobamba</option>
-                </select>
-    
-                <h5>Responsable</h5>
-                <select class="form-control">
-                        <option value="Persona1">Persona1</option>
-                        <option value="Persona2">Persona2</option>
-                    </select>
-    
-                    <h5>Descripcion</h5>
-                    <input class="form-control" type="text" maxlength="30" placeholder="De una brebe descripcion">
-    
-                    <h5>Memoria Ram</h5>
-                    <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la cantidad">
-    
-                    <h5>Procesador</h5>
-                    <input class="form-control" type="text" maxlength="25" placeholder="Ingrese el modelo">
-    
-                    <h5>Disco Duro</h5>
-                    <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el tamaño">
-    
-                    <h5>Sistema operativo</h5>
-                    <select class="form-control">
-                        <option value="Windows">Windows</option>
-                        <option value="MacOS">Mac OS</option>
-                    </select>
-                    <h5>Licenciado</h5>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="Si">Si</label><br>
-                            <label><input type="checkbox" value="No">No</label>
-                        </div>
-    
-                    <h5>Office</h5>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="Si">Si</label><br>
-                        <label><input type="checkbox" value="No">No</label>
-                    </div>
-
-                    <h5>Marca</h5>
-                    <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la marca">
-    
-                    <h5>Modelo</h5>
-                    <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el modelo">
-    
-                    <h5>Serie</h5>
-                    <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la serie">
-    
-                    <h5>Particularidad</h5>
-                    <input class="form-control" type="text" maxlength="10">
-                    
-                    <h5>No# de factura</h5>
-                    <input class="form-control" type="text" maxlength="10">
-                    
-                    <h5>Valor de la factura</h5>
-                    <input class="form-control" type="number" maxlength="10">
-                    
-                    <h5>Fecha de adquisicion</h5>
-                    <input class="form-control" type="date" maxlength="10">
-    
-                    <h5>Observaciones</h5>
-                    <textarea class="form-control" maxlength="100"></textarea>
-    
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Guardar</button>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-3">
-            <div class="modal fade" id="Eliminar" tabindex="-1" role="dialog" aria-labelledby="eliminarLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header" style="background-color:#3072AC;">
-                    <h4 class="modal-title text-light" id="eliminarLabel">Selecione el registro que desea eliminar</h4>
+                        <h4 class="modal-title text-light" id="modificarLabel">Selecione el registro que desea
+                            modificar</h4>
                     </div>
                     <div class="modal-body">
                         <h5>No# de registro</h5>
@@ -294,16 +226,112 @@
                             <option value="2">2</option>
                             <option value="3">3</option>
                         </select>
-        
+                        <button type="button" class="btn btn-info" style="margin-top: 5px">Consultar</button>
+                        <hr>
+
+                        <h5>Codigo Interno:</h5>
+                        <input class="form-control" type="text" maxlength="15" placeholder="Ingrese el codigo">
+
+                        <h5>Ciudad de Ubicacion</h5>
+                        <select class="form-control">
+                            <option value="Quito">Quito</option>
+                            <option value="Ambato">Ambato</option>
+                            <option value="Riobamba">Riobamba</option>
+                        </select>
+
+                        <h5>Responsable</h5>
+                        <select class="form-control">
+                            <option value="Persona1">Persona1</option>
+                            <option value="Persona2">Persona2</option>
+                        </select>
+
+                        <h5>Descripcion</h5>
+                        <input class="form-control" type="text" maxlength="30" placeholder="De una brebe descripcion">
+
+                        <h5>Memoria Ram</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la cantidad">
+
+                        <h5>Procesador</h5>
+                        <input class="form-control" type="text" maxlength="25" placeholder="Ingrese el modelo">
+
+                        <h5>Disco Duro</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el tamaño">
+
+                        <h5>Sistema operativo</h5>
+                        <select class="form-control">
+                            <option value="Windows">Windows</option>
+                            <option value="MacOS">Mac OS</option>
+                        </select>
+                        <h5>Licenciado</h5>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Si">Si</label><br>
+                            <label><input type="checkbox" value="No">No</label>
+                        </div>
+
+                        <h5>Office</h5>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Si">Si</label><br>
+                            <label><input type="checkbox" value="No">No</label>
+                        </div>
+
+                        <h5>Marca</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la marca">
+
+                        <h5>Modelo</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el modelo">
+
+                        <h5>Serie</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la serie">
+
+                        <h5>Particularidad</h5>
+                        <input class="form-control" type="text" maxlength="10">
+
+                        <h5>No# de factura</h5>
+                        <input class="form-control" type="text" maxlength="10">
+
+                        <h5>Valor de la factura</h5>
+                        <input class="form-control" type="number" maxlength="10">
+
+                        <h5>Fecha de adquisicion</h5>
+                        <input class="form-control" type="date" maxlength="10">
+
+                        <h5>Observaciones</h5>
+                        <textarea class="form-control" maxlength="100"></textarea>
+
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="modal fade" id="Eliminar" tabindex="-1" role="dialog" aria-labelledby="eliminarLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#3072AC;">
+                        <h4 class="modal-title text-light" id="eliminarLabel">Selecione el registro que desea eliminar</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h5>No# de registro</h5>
+                        <select class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="../css/bootstrap-4.1.3/dist/js/bootstrap.js"></script>
     <script src="../js/jquery-slim.min.js"></script>
@@ -314,10 +342,16 @@
     <script src="../js/dist/tooltip.js"></script>
     <script src="../js/dist/popover.js"></script>
 
-  </body>
-    <footer style="margin-top: 15px">
-        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#Ingreso"><i class="fas fa-plus"></i> Ingresar</button>
-        <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#Modificar"><i class="far fa-file-alt"></i> Modificar</button>
-        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#Eliminar"><i class="fas fa-times"></i> Eliminar</button>
-    </footer>
+</body>
+<footer style="margin-top: 15px">
+    <a type="button" href="indexAdministrador.html" class="btn btn-outline-primary"><i class="fas fa-arrow-alt-circle-left"></i>
+        Volver</a>
+    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#Ingreso"><i class="fas fa-plus"></i>
+        Ingresar</button>
+    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#Modificar"><i class="far fa-file-alt"></i>
+        Modificar</button>
+    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#Eliminar"><i class="fas fa-times"></i>
+        Eliminar</button>
+</footer>
+
 </html>

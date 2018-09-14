@@ -73,70 +73,71 @@
     <div class="container mt-3">
         <div class="modal fade" id="Asignar" tabindex="-1" role="dialog" aria-labelledby="asignarLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-light" style="background-color:#3072AC;">
-                <h4 class="modal-title text-center" id="asignarLabel">Ingrese el nuevo equipo</h4>
-                </div>
-                <div class="modal-body">
-                <h5>Codigo Interno:</h5>
-                <input class="form-control" type="text" maxlength="15" placeholder="Ingrese el codigo">
-    
-                <h5>Ciudad de Ubicacion</h5>
-                <select class="form-control">
-                    <option value="Quito">Quito</option>
-                    <option value="Ambato">Ambato</option>
-                    <option value="Riobamba">Riobamba</option>
-                </select>
-    
-                <h5>Responsable</h5>
-                <select class="form-control">
-                        <option value="Persona1">Persona1</option>
-                        <option value="Persona2">Persona2</option>
-                    </select>
-    
-                    <h5>Descripcion</h5>
-                    <input class="form-control" type="text" maxlength="30" placeholder="De una brebe descripcion">
-                    
-                    <h5>Marca</h5>
-                    <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la marca">
+                <div class="modal-content">
+                    <div class="modal-header text-light" style="background-color:#3072AC;">
+                        <h4 class="modal-title text-center" id="asignarLabel">Ingrese el nuevo equipo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Codigo Interno:</h5>
+                        <input class="form-control" type="text" maxlength="15" placeholder="Ingrese el codigo">
 
-                    <h5>Modelo</h5>
-                    <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el modelo">
-    
-                    <h5>Serie</h5>
-                    <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la serie">
-    
-                    <h5>Particularidad</h5>
-                    <input class="form-control" type="text" maxlength="10">
-                    
-                    <h5>No# de factura</h5>
-                    <input class="form-control" type="text" maxlength="10">
-                    
-                    <h5>Valor de la factura</h5>
-                    <input class="form-control" type="number" maxlength="10">
-                    
-                    <h5>Fecha de adquisicion</h5>
-                    <input class="form-control" type="date" maxlength="10">
-    
-                    <h5>Observaciones</h5>
-                    <textarea class="form-control" maxlength="100"></textarea>
-    
+                        <h5>Ciudad de Ubicacion</h5>
+                        <select class="form-control">
+                            <option value="Quito">Quito</option>
+                            <option value="Ambato">Ambato</option>
+                            <option value="Riobamba">Riobamba</option>
+                        </select>
+
+                        <h5>Responsable</h5>
+                        <select class="form-control">
+                            <option value="Persona1">Persona1</option>
+                            <option value="Persona2">Persona2</option>
+                        </select>
+
+                        <h5>Descripcion</h5>
+                        <input class="form-control" type="text" maxlength="30" placeholder="De una brebe descripcion">
+
+                        <h5>Marca</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la marca">
+
+                        <h5>Modelo</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el modelo">
+
+                        <h5>Serie</h5>
+                        <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la serie">
+
+                        <h5>Particularidad</h5>
+                        <input class="form-control" type="text" maxlength="10">
+
+                        <h5>No# de factura</h5>
+                        <input class="form-control" type="text" maxlength="10">
+
+                        <h5>Valor de la factura</h5>
+                        <input class="form-control" type="number" maxlength="10">
+
+                        <h5>Fecha de adquisicion</h5>
+                        <input class="form-control" type="date" maxlength="10">
+
+                        <h5>Observaciones</h5>
+                        <textarea class="form-control" maxlength="100"></textarea>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Guardar</button>
-                </div>
-            </div>
             </div>
         </div>
     </div>
 
     <div class="container mt-3">
-            <div class="modal fade" id="Modificar" tabindex="-1" role="dialog" aria-labelledby="modificarLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
+        <div class="modal fade" id="Modificar" tabindex="-1" role="dialog" aria-labelledby="modificarLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header" style="background-color:#3072AC;">
-                    <h4 class="modal-title text-light" id="modificarLabel">Selecione el registro que desea modificar</h4>
+                        <h4 class="modal-title text-light" id="modificarLabel">Selecione el registro que desea
+                            modificar</h4>
                     </div>
                     <div class="modal-body">
                         <h5>No# de registro</h5>
@@ -146,82 +147,82 @@
                             <option value="3">3</option>
                         </select>
                         <button type="button" class="btn btn-info" style="margin-top: 5px">Consultar</button>
-                        <hr> 
-                    
-                    <h5>Codigo Interno:</h5>
-                    <input class="form-control" type="text" maxlength="15" placeholder="Ingrese el codigo">
-        
-                    <h5>Ciudad de Ubicacion</h5>
-                    <select class="form-control">
-                        <option value="Quito">Quito</option>
-                        <option value="Ambato">Ambato</option>
-                        <option value="Riobamba">Riobamba</option>
-                    </select>
-        
-                    <h5>Responsable</h5>
-                    <select class="form-control">
+                        <hr>
+
+                        <h5>Codigo Interno:</h5>
+                        <input class="form-control" type="text" maxlength="15" placeholder="Ingrese el codigo">
+
+                        <h5>Ciudad de Ubicacion</h5>
+                        <select class="form-control">
+                            <option value="Quito">Quito</option>
+                            <option value="Ambato">Ambato</option>
+                            <option value="Riobamba">Riobamba</option>
+                        </select>
+
+                        <h5>Responsable</h5>
+                        <select class="form-control">
                             <option value="Persona1">Persona1</option>
                             <option value="Persona2">Persona2</option>
                         </select>
-        
+
                         <h5>Descripcion</h5>
                         <input class="form-control" type="text" maxlength="30" placeholder="De una brebe descripcion">
 
                         <h5>Marca</h5>
                         <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la marca">
-        
+
                         <h5>Modelo</h5>
                         <input class="form-control" type="text" maxlength="10" placeholder="Ingrese el modelo">
-        
+
                         <h5>Serie</h5>
                         <input class="form-control" type="text" maxlength="10" placeholder="Ingrese la serie">
-        
+
                         <h5>Particularidad</h5>
                         <input class="form-control" type="text" maxlength="10">
-                        
+
                         <h5>No# de factura</h5>
                         <input class="form-control" type="text" maxlength="10">
-                        
+
                         <h5>Valor de la factura</h5>
                         <input class="form-control" type="number" maxlength="10">
-                        
+
                         <h5>Fecha de adquisicion</h5>
                         <input class="form-control" type="date" maxlength="10">
-        
+
                         <h5>Observaciones</h5>
                         <textarea class="form-control" maxlength="100"></textarea>
-        
+
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <div class="container mt-3">
         <div class="modal fade" id="Eliminar" tabindex="-1" role="dialog" aria-labelledby="eliminarLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color:#3072AC;">
-                <h4 class="modal-title text-light" id="eliminarLabel">Selecione el registro que desea eliminar</h4>
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#3072AC;">
+                        <h4 class="modal-title text-light" id="eliminarLabel">Selecione el registro que desea eliminar</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h5>No# de registro</h5>
+                        <select class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-danger">Eliminar</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <h5>No# de registro</h5>
-                    <select class="form-control">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-    
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
             </div>
         </div>
     </div>
@@ -236,9 +237,14 @@
     <script src="../js/dist/popover.js"></script>
 </body>
 <footer style="margin-top: 15px">
-    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#Asignar"><i class="fas fa-plus"></i> Asignar</button>
-    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#Modificar"><i class="far fa-file-alt"></i> Modificar</button>
-    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#Eliminar"><i class="fas fa-times"></i> Eliminar</button>
+    <a type="button" href="indexAdministrador.html" class="btn btn-outline-primary"><i class="fas fa-arrow-alt-circle-left"></i>
+        Volver</a>
+    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#Asignar"><i class="fas fa-plus"></i>
+        Asignar</button>
+    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#Modificar"><i class="far fa-file-alt"></i>
+        Modificar</button>
+    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#Eliminar"><i class="fas fa-times"></i>
+        Eliminar</button>
 </footer>
 
 </html>
