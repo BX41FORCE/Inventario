@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" ng-app>
+<html lang="es" ng-app="Prueba">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap-4.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome-free-5.3.1-web/css/all.min.css">
     <script type="text/javascript" src="../JS/angular.min.js"></script>
+    <script type="text/javascript" src="../controllers/bajaEquipo.controler.js"></script>
     <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="../css/bootstrap-4.1.3/dist/js/bootstrap.js"></script>
     <title>Módulo de Baja de Equipos</title>
@@ -16,28 +17,29 @@
     </div>
 </head>
 
-<body>
+<body ng-controller="PrimerControlador">
     <p></p>
     <div class="container border border-dark">
         <div>
             <h5>Tipo</h5>
-            <select class="form-control col-sm-2">
-                <option>CPU</option>
-                <option>Computador Portátil</option>
-                <option>Escaner</option>
-                <option>Impresora</option>
-                <option>Disco Duro Externo</option>
-                <option>Tablet</option>
-                <option>Smarth Phone</option>
-                <option>MI</option>
+            <select class="form-control col-sm-3" id="tipo">
+                <option value="1">CPU</option>
+                <option value="2">Computador Portátil</option>
+                <option value="3">Escaner</option>
+                <option value="4">Impresora</option>
+                <option value="5">Disco Duro Externo</option>
+                <option value="6">Tablet</option>
+                <option value="7">Smarth Phone</option>
+                <option value="8">MI</option>
             </select>
         </div>
         <p></p>
         <div class="input-group">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><i class="fas fa-key fa-1x"></i></span>
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-key fa-1x"></i>{{codigo}}</span>
             </div>
-            <input type="text" class="form-control" placeholder="Código" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Código" aria-label="Username" ng-model="codigo"
+                aria-describedby="basic-addon1">
         </div>
         <p></p>
         <div class="input-group sm-3">
