@@ -1,0 +1,14 @@
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\bin\Debug\netcoreapp2.1\ModuloInventario.deps.json
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\bin\Debug\netcoreapp2.1\ModuloInventario.runtimeconfig.json
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\bin\Debug\netcoreapp2.1\ModuloInventario.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\bin\Debug\netcoreapp2.1\ModuloInventario.dll
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\obj\Debug\netcoreapp2.1\ModuloInventario.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\obj\Debug\netcoreapp2.1\ModuloInventario.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\obj\Debug\netcoreapp2.1\ModuloInventario.RazorAssemblyInfo.cache
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\obj\Debug\netcoreapp2.1\ModuloInventario.RazorAssemblyInfo.cs
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\obj\Debug\netcoreapp2.1\ModuloInventario.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\obj\Debug\netcoreapp2.1\ModuloInventario.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\obj\Debug\netcoreapp2.1\ModuloInventario.RazorTargetAssemblyInfo.cache
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\bin\Debug\netcoreapp2.1\ModuloInventario.pdb
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\obj\Debug\netcoreapp2.1\ModuloInventario.dll
+C:\Users\Usuario\Desktop\SifizsoftInventario\ModuloInventario\ModuloInventario\obj\Debug\netcoreapp2.1\ModuloInventario.pdb
