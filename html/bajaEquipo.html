@@ -22,7 +22,7 @@
     <div class="container border border-dark">
         <div>
             <h5>Tipo</h5>
-            <select class="form-control col-sm-3" id="tipo">
+            <select class="form-control col-sm-3" id="tipoBajaEquipo">
                 <option value="1">CPU</option>
                 <option value="2">Computador Portátil</option>
                 <option value="3">Escaner</option>
@@ -36,37 +36,36 @@
         <p></p>
         <div class="input-group">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><i class="fas fa-key fa-1x"></i>{{codigo}}</span>
+                <span class="input-group-text"><i class="fas fa-key fa-1x"></i></span>
             </div>
-            <input type="text" class="form-control" placeholder="Código" aria-label="Username" ng-model="codigo"
-                aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Código" id="codigoBajaEquipo">
         </div>
         <p></p>
         <div class="input-group sm-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><i class="fas fa-users fa-1x"></i></span>
+                <span class="input-group-text"><i class="fas fa-users fa-1x"></i></span>
             </div>
-            <input type="text" class="form-control" placeholder="Asignado a:" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Asignado a:" id="asignadoBajaEquipo">
         </div>
         <p></p>
         <div class="input-group sm-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user fa-1x"></i></span>
+                <span class="input-group-text"><i class="fas fa-user fa-1x"></i></span>
             </div>
-            <input type="text" class="form-control" placeholder="Aprobado por:" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Aprobado por:" id="aprobadoBajaEquipo">
         </div>
         <p></p>
         <div>
             <h5>Detalle</h5>
-            <textarea rows="5" cols="74"></textarea>
+            <textarea rows="5" cols="74" id="detalleBajaEquipo""></textarea>
         </div>
         <p></p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupFileAddon01">Subir Adjunto</span>
+                <span class="input-group-text">Subir Adjunto</span>
             </div>
             <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                <input type="file" class="custom-file-input" id="adjuntoBajaEquipo" aria-describedby="inputGroupFileAddon01">
                 <label class="custom-file-label" for="inputGroupFile01">Nombre del Documento</label>
             </div>
         </div>

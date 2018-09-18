@@ -21,28 +21,28 @@
     <div class="container border border-dark">
         <div>
             <h5>Tipo</h5>
-            <select class="form-control col-sm-2">
-                <option>CPU</option>
-                <option>Computador Portátil</option>
-                <option>Escaner</option>
-                <option>Impresora</option>
-                <option>Disco Duro Externo</option>
-                <option>Tablet</option>
-                <option>Smarth Phone</option>
-                <option>MI</option>
+            <select class="form-control col-sm-2" id="tipoDevolucion">
+                <option value="1">CPU</option>
+                <option value="2">Computador Portátil</option>
+                <option value="3">Escaner</option>
+                <option value="4">Impresora</option>
+                <option value="5">Disco Duro Externo</option>
+                <option value="6">Tablet</option>
+                <option value="7">Smarth Phone</option>
+                <option value="8">MI</option>
             </select>
         </div>
         <p></p>
         <div class="row">
             <div class="col-sm-3">
                 <h5>Fecha de Entrega</h5>
-                <input class="form-control" type="date">
+                <input class="form-control" type="date" id="fechaDevolucion">
             </div>
         </div>
         <p></p>
         <div>
             <h5>Detalle</h5>
-            <textarea rows="5" cols="74"></textarea>
+            <textarea rows="5" cols="74" id="detalleDevolucion"></textarea>
         </div>
         <p>Plantilla</p>
         <p>Reporte</p>
