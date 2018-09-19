@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,6 +8,7 @@ namespace ModuloInventario.DBContext
 {
     public class INGRESOCOMPUTADORES
     {
+        [Key]
         public int SECUENCIAL { get; set; }
         public int CODIGOINTERNO { get; set; }
         public string CUADADDEUBICACION { get; set; }

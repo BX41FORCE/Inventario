@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ModuloInventario.DBContext.MANTENIMIENTOCOMPUTADORES>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/ASIGNACIONCOMPUTADORES/Index.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TIPO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SECUANCIALPERSONA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SECUANCIALINGRESOCOMPUTADORES)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TIPO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SECUANCIALPERSONA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SECUANCIALINGRESOCOMPUTADORES)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SECUENCIAL">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SECUENCIAL">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SECUENCIAL">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

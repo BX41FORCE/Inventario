@@ -1,0 +1,37 @@
+﻿@model ModuloInventario.DBContext.BAJADEEQUIPOSCOMPUTADORES
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/ASIGNACIONCOMPUTADORES/Index.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BAJADEEQUIPOSCOMPUTADORES</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPO)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TIPO)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SECUANCIALPERSONA)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SECUANCIALPERSONA)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SECUANCIALINGRESOCOMPUTADORES)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SECUANCIALINGRESOCOMPUTADORES)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SECUENCIAL">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

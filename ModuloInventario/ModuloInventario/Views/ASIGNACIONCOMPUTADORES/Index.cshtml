@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ModuloInventario.DBContext.ASIGNACIONCOMPUTADORES>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/ASIGNACIONCOMPUTADORES/Index.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RESPONSABLE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SECUANCIALPERSONA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SECUANCIALINGRESOCOMPUTADORES)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TIEMPOINICIO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TIEMPOFIN)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RESPONSABLE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SECUANCIALPERSONA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SECUANCIALINGRESOCOMPUTADORES)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TIEMPOINICIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TIEMPOFIN)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SECUENCIAL">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SECUENCIAL">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SECUENCIAL">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

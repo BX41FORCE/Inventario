@@ -1,0 +1,37 @@
+﻿@model ModuloInventario.DBContext.ITEM
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/ASIGNACIONCOMPUTADORES/Index.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ITEM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CODIGO)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CODIGO)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPOITEM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TIPOITEM)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CATEGORIAITEM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CATEGORIAITEM)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SECUENCIAL">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
