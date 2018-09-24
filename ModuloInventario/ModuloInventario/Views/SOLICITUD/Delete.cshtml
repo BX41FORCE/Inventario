@@ -1,0 +1,63 @@
+﻿@model ModuloInventario.Models.SOLICITUD
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SOLICITUD</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SECUENCIALPERSONA)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SECUENCIALPERSONA)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TIEMPO)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TIEMPO)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPO)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TIPO)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TIEMPOINICIO)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TIEMPOINICIO)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TIEMPOFIN)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TIEMPOFIN)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DETALLE)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DETALLE)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ESTADO)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ESTADO)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="SECUENCIAL" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
