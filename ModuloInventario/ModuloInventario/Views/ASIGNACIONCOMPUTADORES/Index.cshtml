@@ -9,8 +9,8 @@
 <p>
     <a asp-action="Create">Nuevo</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-responsive" border="1">
+    <thead style="background-color:#3072AC; color:#ffffff;">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.RESPONSABLE)
@@ -27,7 +27,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.TIEMPOFIN)
             </th>
-            <th></th>
+            <th>Opciones</th>
         </tr>
     </thead>
     <tbody>
