@@ -10,11 +10,11 @@ namespace ModuloInventario.Models
     {
         [Key]
         public int SECUENCIAL { get; set; }
-        public int SECUENCIALPERSONA { get; set; }
+        public string RESPONSABLE { get; set; }
         public string TIEMPO { get; set; }
         public string TIPO { get; set; }
-        public int TIEMPOINICIO { get; set; }
-        public int TIEMPOFIN { get; set; }
+        public string TIEMPOINICIO { get; set; }
+        public string TIEMPOFIN { get; set; }
         public string DETALLE { get; set; }
         public bool ESTADO { get; set; }
     }

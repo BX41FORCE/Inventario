@@ -11,7 +11,7 @@ namespace ModuloInventario.Models
         [Key]
         public int SECUENCIAL { get; set; }
         public string TIPO { get; set; }
-        public int TIEMPOENTREGA { get; set; }
+        public string TIEMPOENTREGA { get; set; }
         public string DETALLE { get; set; }
     }
 }

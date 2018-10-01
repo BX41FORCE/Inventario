@@ -11,7 +11,7 @@ namespace ModuloInventario.Models
         [Key]
         public int SECUENCIAL { get; set; }
         public string TIPO { get; set; }
-        public int SECUANCIALPERSONA { get; set; }
-        public int SECUANCIALINGRESOVARIOS { get; set; }
+        public string RESPONSABLE { get; set; }
+        public string CODIGOINTERNO { get; set; }
     }
 }
