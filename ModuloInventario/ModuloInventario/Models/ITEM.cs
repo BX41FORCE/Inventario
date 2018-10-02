@@ -10,8 +10,11 @@ namespace ModuloInventario.Models
     {
         [Key]
         public int SECUENCIAL { get; set; }
+        [Required]
         public string CODIGO { get; set; }
+        [Required]
         public string TIPOITEM { get; set; }
+        [Required]
         public string CATEGORIAITEM { get; set; }
     }
 }
