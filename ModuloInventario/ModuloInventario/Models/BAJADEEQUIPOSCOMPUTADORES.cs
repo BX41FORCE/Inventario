@@ -13,5 +13,6 @@ namespace ModuloInventario.Models
         public string TIPO { get; set; }
         public string RESPONSABLE { get; set; }
         public string CODIGOINTERNO { get; set; }
+        public string MOTIVO { get; set; }
     }
 }
