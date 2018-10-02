@@ -53,7 +53,7 @@ namespace ModuloInventario.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("SECUENCIAL,RESPONSABLE,SECUANCIALPERSONA,SECUANCIALINGRESOVARIOS,TIEMPOINICIO,TIEMPOFIN")] ASIGNACIONVARIOS aSIGNACIONVARIOS)
+        public async Task<IActionResult> Create([Bind("SECUENCIAL,RESPONSABLE,CODIGOINTERNO,TIEMPOINICIO,TIEMPOFIN")] ASIGNACIONVARIOS aSIGNACIONVARIOS)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace ModuloInventario.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("SECUENCIAL,RESPONSABLE,SECUANCIALPERSONA,SECUANCIALINGRESOVARIOS,TIEMPOINICIO,TIEMPOFIN")] ASIGNACIONVARIOS aSIGNACIONVARIOS)
+        public async Task<IActionResult> Edit(int id, [Bind("SECUENCIAL,RESPONSABLE,CODIGOINTERNO,TIEMPOINICIO,TIEMPOFIN")] ASIGNACIONVARIOS aSIGNACIONVARIOS)
         {
             if (id != aSIGNACIONVARIOS.SECUENCIAL)
             {
