@@ -4,13 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Baja de Computadores</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Dar de baja</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-responsive" border="1">
+    <thead style="background-color:#3072AC; color:#ffffff;">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.TIPO)
@@ -24,7 +24,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.MOTIVO)
             </th>
-            <th></th>
+            <th>Opciones</th>
         </tr>
     </thead>
     <tbody>
@@ -43,9 +43,9 @@
                 @Html.DisplayFor(modelItem => item.MOTIVO)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.SECUENCIAL">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SECUENCIAL">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SECUENCIAL">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.SECUENCIAL">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.SECUENCIAL">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.SECUENCIAL">Eliminar</a>
             </td>
         </tr>
 }
