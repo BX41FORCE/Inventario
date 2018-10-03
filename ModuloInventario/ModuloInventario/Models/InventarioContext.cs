@@ -21,7 +21,5 @@ namespace ModuloInventario.Models
         public DbSet<MANTENIMIENTOCOMPUTADORES> mantenimientoComputadores { get; set; }
         public DbSet<MANTENIMIENTOVARIOS> mantenimientoVarios { get; set; }
         public DbSet<ITEM> item { get; set; }
-        public DbSet<SOLICITUD> solicitud { get; set; }
-        public DbSet<DEBOLUCIONEQUIPO> debolucion { get; set; }
     }
 }
