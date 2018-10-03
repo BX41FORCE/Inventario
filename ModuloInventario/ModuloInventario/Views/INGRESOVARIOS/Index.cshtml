@@ -4,13 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Ingreso de Equipos</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Ingresar</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-responsive" border="1">
+    <thead style="background-color:#3072AC; color:#ffffff;">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.CODIGOINTERNO)
@@ -51,57 +51,58 @@
             <th>
                 @Html.DisplayNameFor(model => model.OBSERVACIONES)
             </th>
-            <th></th>
+            <th>..............Opciones............</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CODIGOINTERNO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CUADADDEUBICACION)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ITEM)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DESCRIPCION)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MARCA)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MODELO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SERIE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PARTICULARIDAD)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ESTADO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NODEFACTURA)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.VALORFACTURA)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FECHAADQUISICION)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OBSERVACIONES)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.SECUENCIAL">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SECUENCIAL">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SECUENCIAL">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CODIGOINTERNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CUADADDEUBICACION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ITEM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DESCRIPCION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MARCA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MODELO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SERIE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PARTICULARIDAD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ESTADO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NODEFACTURA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VALORFACTURA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FECHAADQUISICION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OBSERVACIONES)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SECUENCIAL">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.SECUENCIAL">Detalle</a> |
+                    <a asp-action="Delete" asp-route-id="@item.SECUENCIAL">Eliminar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

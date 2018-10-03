@@ -61,7 +61,7 @@ using ModuloInventario.Models;
             WriteLiteral("\r\n<p></p>\r\n\r\n");
             EndContext();
             BeginContext(58, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a59ebb4e1c4c4b5bb1a4a249f0df0548", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "45e4fff5280147b5984755c5f93a0125", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
