@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ModuloInventario.Models.asignacionVarios>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Asignación Varios</h2>
+
+<p>
+    @Html.ActionLink("Asignar", "Create")
+</p>
+<table class="table table-responsive" border="1">
+    <tr style="background-color:#3072AC; color:#ffffff;">
+        <th>
+            @Html.DisplayNameFor(model => model.RESPONSABLE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODIGOINTERNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIEMPOINICIO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIEMPOFIN)
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RESPONSABLE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CODIGOINTERNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TIEMPOINICIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TIEMPOFIN)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.SECUENCIAL }) |
+                @Html.ActionLink("Detalle", "Details", new { id = item.SECUENCIAL }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.SECUENCIAL })
+            </td>
+        </tr>
+    }
+
+</table>
