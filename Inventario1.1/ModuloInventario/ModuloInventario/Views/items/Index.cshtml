@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ModuloInventario.Models.item>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Item</h2>
+
+<p>
+    @Html.ActionLink("Ingresar", "Create")
+</p>
+<table class="table table-responsive" border="1">
+    <tr style="background-color:#3072AC; color:#ffffff;">
+        <th>
+            @Html.DisplayNameFor(model => model.CODIGO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPOITEM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CATEGORIAITEM)
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CODIGO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TIPOITEM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CATEGORIAITEM)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.SECUENCIAL }) |
+                @Html.ActionLink("Detalle", "Details", new { id = item.SECUENCIAL }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.SECUENCIAL })
+            </td>
+        </tr>
+    }
+
+</table>

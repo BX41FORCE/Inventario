@@ -66,7 +66,11 @@ using ModuloInventario.Models;
             WriteLiteral("\r\n<h2>Baja de Equipo</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(146, 32, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2daf21a94314a95a9ecdabd1f76ab93", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51ed6c278d7441068e292d8f359232c9", async() => {
+>>>>>>> e7c5613bfb83ad7b48c48ac6dae04883bc6b1014
                 BeginContext(169, 5, true);
                 WriteLiteral("Nuevo");
                 EndContext();
@@ -177,7 +181,11 @@ using ModuloInventario.Models;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(1343, 63, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ffaec42be72d472fbf49d1deb5db1af1", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7be8b50154524c8ca9d6f2795aa5438a", async() => {
+>>>>>>> e7c5613bfb83ad7b48c48ac6dae04883bc6b1014
                 BeginContext(1396, 6, true);
                 WriteLiteral("Editar");
                 EndContext();
@@ -212,7 +220,11 @@ using ModuloInventario.Models;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(1430, 67, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "427f5202501d45799bd8002f8aa18d0a", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab872b96fc614e9293b566ab05377aeb", async() => {
+>>>>>>> e7c5613bfb83ad7b48c48ac6dae04883bc6b1014
                 BeginContext(1486, 7, true);
                 WriteLiteral("Detalle");
                 EndContext();
@@ -247,7 +259,11 @@ using ModuloInventario.Models;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(1521, 67, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3347baeedbe428e9a678357dc178d7d", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85b0b5ef1aba499199afcb5fa65780ad", async() => {
+>>>>>>> e7c5613bfb83ad7b48c48ac6dae04883bc6b1014
                 BeginContext(1576, 8, true);
                 WriteLiteral("Eliminar");
                 EndContext();
