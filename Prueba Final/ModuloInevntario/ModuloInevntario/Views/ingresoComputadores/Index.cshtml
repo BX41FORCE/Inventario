@@ -1,73 +1,73 @@
-﻿@model IEnumerable<ModuloInevntario.Models.ingresoComputadores>
+﻿@model ModuloInevntario.ViewModels.IndexViewModel
 
 @{
     ViewBag.Title = "Index";
 }
 <br />
 <h3>Ingreso de Computadores</h3>
-<script src="~/Scripts/jquery-3.3.1.js"></script>
+
 <p>
     @Html.ActionLink("Ingresar", "Create")
 </p>
-<table class="table table-responsive table-striped" border="1">
+<table class="table table-responsive table-striped table-bordered">
     <thead class="thead-dark">
         <tr>
-            <th id="Codigo">
-                @Html.DisplayNameFor(model => model.CODIGOINTERNO)
+            <th>
+                Código
             </th>
-            <th id="Ciudad">
-                @Html.DisplayNameFor(model => model.CUADADDEUBICACION)
+            <th>
+                Ciudad
             </th>
-            <th id="Descripcion">
-                @Html.DisplayNameFor(model => model.DESCRIPCION)
+            <th>
+                Descripción
             </th>
-            <th id="Ram">
-                @Html.DisplayNameFor(model => model.MEMORIARAM)
+            <th>
+                RAM
             </th>
-            <th id="Procesador">
-                @Html.DisplayNameFor(model => model.PROCESADOR)
+            <th>
+                Procesador
             </th>
-            <th id="Disco">
-                @Html.DisplayNameFor(model => model.DISCODURO)
+            <th>
+                Disco
             </th>
-            <th id="Licencia">
-                @Html.DisplayNameFor(model => model.LICENCIADO)
+            <th>
+                Licenciado
             </th>
-            <th id="Office">
-                @Html.DisplayNameFor(model => model.OFFICE)
+            <th>
+                Office
             </th>
-            <th id="Marca">
-                @Html.DisplayNameFor(model => model.MARCA)
+            <th>
+                Marca
             </th>
-            <th id="Modelo">
-                @Html.DisplayNameFor(model => model.MODELO)
+            <th>
+                Modelo
             </th>
-            <th id="Serie">
-                @Html.DisplayNameFor(model => model.SERIE)
+            <th>
+                Serie
             </th>
-            <th id="Particularidad">
-                @Html.DisplayNameFor(model => model.PARTICULARIDAD)
+            <th>
+                Particularidad
             </th>
-            <th id="Estado">
-                @Html.DisplayNameFor(model => model.ESTADO)
+            <th>
+                Estado
             </th>
-            <th id="FacturaN">
-                @Html.DisplayNameFor(model => model.NODEFACTURA)
+            <th>
+                NºFactura
             </th>
-            <th id="FacturaV">
-                @Html.DisplayNameFor(model => model.VALORFACTURA)
+            <th>
+                Valor
             </th>
-            <th id="Fecha">
-                @Html.DisplayNameFor(model => model.FECHAADQUISICION)
+            <th>
+                Fecha
             </th>
-            <th id="Observaciones">
-                @Html.DisplayNameFor(model => model.OBSERVACIONES)
+            <th>
+                Observaciones
             </th>
             <th>.............Opciones...........</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.ingresoComputador)
         {
             <tr>
                 <td>
@@ -128,25 +128,8 @@
                 </td>
             </tr>
         }
-        </tbody>
+    </tbody>
 
 </table>
-<script>
-    $('#Codigo').text('C\u00F3digo');
-    $('#Ciudad').text('Ciudad');
-    $('#Descripcion').text('Descripci\u00F3n');
-    $('#Ram').text('RAM');
-    $('#Procesador').text('Procesador');
-    $('#Disco').text('Disco');
-    $('#Licencia').text('Licenciado');
-    $('#Office').text('Office');
-    $('#Marca').text('Marca');
-    $('#Modelo').text('Modelo');
-    $('#Serie').text('Serie');
-    $('#Particularidad').text('Particularidad');
-    $('#Estado').text('Estado');
-    $('#FacturaN').text('NºFactura');
-    $('#FacturaV').text('$Factura');
-    $('#Fecha').text('Adquirido');
-    $('#Observaciones').text('Observaciones');
-</script>
+
+@{Html.RenderPartial("_paginador", Model);}

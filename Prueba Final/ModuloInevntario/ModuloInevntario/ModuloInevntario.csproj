@@ -172,6 +172,7 @@
     <Compile Include="Models\asignacionVarios.cs" />
     <Compile Include="Models\bajaComputadores.cs" />
     <Compile Include="Models\bajaVarios.cs" />
+    <Compile Include="Models\BaseModelo.cs" />
     <Compile Include="Models\ingresoComputadores.cs" />
     <Compile Include="Models\ingresoVarios.cs" />
     <Compile Include="Models\InventarioContext.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="Models\mantenimientoVarios.cs" />
     <Compile Include="Models\PERSONA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\IndexViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -235,7 +237,9 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -293,6 +297,7 @@
     <Content Include="Views\mantenimientoVarios\Details.cshtml" />
     <Content Include="Views\mantenimientoVarios\Edit.cshtml" />
     <Content Include="Views\mantenimientoVarios\Index.cshtml" />
+    <Content Include="Views\Shared\_paginador.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

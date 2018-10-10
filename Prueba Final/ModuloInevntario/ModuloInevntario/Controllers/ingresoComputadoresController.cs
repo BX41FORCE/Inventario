@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ModuloInevntario.Models;
+using ModuloInevntario.ViewModels;
 
 namespace ModuloInevntario.Controllers
 {
@@ -15,9 +16,26 @@ namespace ModuloInevntario.Controllers
         private InventarioContext db = new InventarioContext();
 
         // GET: ingresoComputadores
-        public ActionResult Index()
+        public ActionResult Index(int pagina = 1)
         {
-            return View(db.ingresoComputadores.ToList());
+            var cantidadRegistrosPorPagina = 10; // parámetro
+            using (var db = new InventarioContext())
+            {
+
+                var IngresoComputador = db.ingresoComputadores.OrderBy(x => x.SECUENCIAL)
+                    .Skip((pagina - 1) * cantidadRegistrosPorPagina)
+                    .Take(cantidadRegistrosPorPagina).ToList();
+                var totalDeRegistros = db.ingresoComputadores.Count();
+
+                var modelo = new IndexViewModel();
+                modelo.ingresoComputador = IngresoComputador;
+                modelo.PaginaActual = pagina;
+                modelo.TotalDeRegistros = totalDeRegistros;
+                modelo.RegistrosPorPagina = cantidadRegistrosPorPagina;
+
+                return View(modelo);
+            }
+            //return View(db.ingresoComputadores.ToList());
         }
 
         // GET: ingresoComputadores/Details/5
