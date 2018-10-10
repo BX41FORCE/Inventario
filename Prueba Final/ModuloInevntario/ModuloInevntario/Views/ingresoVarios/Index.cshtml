@@ -1,114 +1,106 @@
-﻿@model IEnumerable<ModuloInevntario.Models.ingresoVarios>
+﻿@model ModuloInevntario.ViewModels.IndexViewModel
 
 @{
     ViewBag.Title = "Index";
 }
+
 <br />
 <script src="~/Scripts/jquery-3.3.1.js"></script>
-<h2>Ingreso Varios</h2>
+<h2>Ingreso de Artículos Varios</h2>
+
 <p>
     @Html.ActionLink("Ingresar", "Create")
 </p>
-<table class="table table-responsive table-striped" border="1">
-    <tr class="thead-dark">
-        <th id="Codigo">
-            @Html.DisplayNameFor(model => model.CODIGOINTERNO)
-        </th>
-        <th id="Ciudad">
-            @Html.DisplayNameFor(model => model.CUADADDEUBICACION)
-        </th>
-        <th id="Descripcion">
-            @Html.DisplayNameFor(model => model.DESCRIPCION)
-        </th>
-        <th id="Marca">
-            @Html.DisplayNameFor(model => model.MARCA)
-        </th>
-        <th id="Modelo">
-            @Html.DisplayNameFor(model => model.MODELO)
-        </th>
-        <th id="Serie">
-            @Html.DisplayNameFor(model => model.SERIE)
-        </th>
-        <th id="Particularidad">
-            @Html.DisplayNameFor(model => model.PARTICULARIDAD)
-        </th>
-        <th id="Estado">
-            @Html.DisplayNameFor(model => model.ESTADO)
-        </th>
-        <th id="FacturaN">
-            @Html.DisplayNameFor(model => model.NODEFACTURA)
-        </th>
-        <th id="FacturaV">
-            @Html.DisplayNameFor(model => model.VALORFACTURA)
-        </th>
-        <th id="Fecha">
-            @Html.DisplayNameFor(model => model.FECHAADQUISICION)
-        </th>
-        <th id="Observaciones">
-            @Html.DisplayNameFor(model => model.OBSERVACIONES)
-        </th>
-        <th>.............Opciones...........</th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
+<table class="table table-responsive table-striped table-bordered">
+    <thead class="thead-dark">
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CODIGOINTERNO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CUADADDEUBICACION)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DESCRIPCION)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MARCA)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MODELO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SERIE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PARTICULARIDAD)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ESTADO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NODEFACTURA)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.VALORFACTURA)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FECHAADQUISICION)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OBSERVACIONES)
-            </td>
-            <td>
-                @Html.ActionLink("Editar", "Edit", new { id = item.SECUENCIAL }) |
-                @Html.ActionLink("Detalle", "Details", new { id = item.SECUENCIAL }) |
-                @Html.ActionLink("Eliminar", "Delete", new { id = item.SECUENCIAL })
-            </td>
+            <th>
+                Código
+            </th>
+            <th>
+                Ciudad
+            </th>
+            <th>
+                Descripción
+            </th>
+            <th>
+                Marca
+            </th>
+            <th>
+                Modelo
+            </th>
+            <th>
+                Serie
+            </th>
+            <th>
+                Particularidad
+            </th>
+            <th>
+                Estado
+            </th>
+            <th>
+                NºFactura
+            </th>
+            <th>
+                Valor
+            </th>
+            <th>
+                Fecha
+            </th>
+            <th>
+                Observaciones
+            </th>
+            <th>.............Opciones...........</th>
         </tr>
-    }
-
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ingresoVario)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CODIGOINTERNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CUADADDEUBICACION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DESCRIPCION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MARCA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MODELO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SERIE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PARTICULARIDAD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ESTADO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NODEFACTURA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VALORFACTURA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FECHAADQUISICION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OBSERVACIONES)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.SECUENCIAL }) |
+                    @Html.ActionLink("Detalle", "Details", new { id = item.SECUENCIAL }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.SECUENCIAL })
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
-<script>
-    $('#Codigo').text('C\u00F3digo');
-    $('#Ciudad').text('Ciudad');
-    $('#Descripcion').text('Descripci\u00F3n');
-    $('#Marca').text('Marca');
-    $('#Modelo').text('Modelo');
-    $('#Serie').text('Serie');
-    $('#Particularidad').text('Particularidad');
-    $('#Estado').text('Estado');
-    $('#FacturaN').text('NºFactura');
-    $('#FacturaV').text('Valor');
-    $('#Fecha').text('Fecha');
-    $('#Observaciones').text('Observaciones');
-</script>
+
+@{Html.RenderPartial("_paginador", Model);}

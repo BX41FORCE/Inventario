@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ModuloInevntario.Models;
+using ModuloInevntario.ViewModels;
 
 namespace ModuloInevntario.Controllers
 {
@@ -15,9 +16,26 @@ namespace ModuloInevntario.Controllers
         private InventarioContext db = new InventarioContext();
 
         // GET: ingresoVarios
-        public ActionResult Index()
+        public ActionResult Index(int pagina = 1)
         {
-            return View(db.ingresoVarios.ToList());
+            var cantidadRegistrosPorPagina = 10; // parámetro
+            using (var db = new InventarioContext())
+            {
+
+                var IngresoVario = db.ingresoVarios.OrderBy(x => x.SECUENCIAL)
+                    .Skip((pagina - 1) * cantidadRegistrosPorPagina)
+                    .Take(cantidadRegistrosPorPagina).ToList();
+                var totalDeRegistros = db.ingresoVarios.Count();
+
+                var modelo = new IndexViewModel();
+                modelo.ingresoVario = IngresoVario;
+                modelo.PaginaActual = pagina;
+                modelo.TotalDeRegistros = totalDeRegistros;
+                modelo.RegistrosPorPagina = cantidadRegistrosPorPagina;
+
+                return View(modelo);
+            }
+            //return View(db.ingresoVarios.ToList());
         }
 
         // GET: ingresoVarios/Details/5
