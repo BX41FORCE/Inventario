@@ -13,17 +13,17 @@ namespace ModuloInevntario.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult SeleccionIngreso()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult SeleccionAsignacion()
         {
-            ViewBag.Message = "Your contact page.";
-
+            return View();
+        }
+        public ActionResult SeleccionMantenimineto()
+        {
             return View();
         }
     }
