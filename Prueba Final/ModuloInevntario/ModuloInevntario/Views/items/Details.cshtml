@@ -1,0 +1,42 @@
+﻿@model ModuloInevntario.Models.item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>item</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CODIGO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODIGO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPOITEM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPOITEM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CATEGORIAITEM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CATEGORIAITEM)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SECUENCIAL }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

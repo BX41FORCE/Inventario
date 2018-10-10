@@ -1,0 +1,42 @@
+﻿@model ModuloInevntario.Models.mantenimientoVarios
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>mantenimientoVarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RESPONSABLE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RESPONSABLE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CODIGOINTERNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODIGOINTERNO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SECUENCIAL }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

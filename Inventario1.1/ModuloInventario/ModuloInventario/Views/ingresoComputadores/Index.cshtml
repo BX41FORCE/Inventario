@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ModuloInventario.Models.ingresoComputadores>
+﻿@model ModuloInventario.ViewModels.IndexViewModel
 
 @{
     ViewBag.Title = "Index";
@@ -9,122 +9,129 @@
 <p>
     @Html.ActionLink("Ingresar", "Create")
 </p>
-<table class="table table-responsive" border="1">
-    <tr style="background-color:#3072AC; color:#ffffff;">
-        <th>
-            @Html.DisplayNameFor(model => model.CODIGOINTERNO)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CUADADDEUBICACION)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DESCRIPCION)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MEMORIARAM)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PROCESADOR)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DISCODURO)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LICENCIADO)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OFFICE)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MARCA)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MODELO)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SERIE)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PARTICULARIDAD)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ESTADO)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NODEFACTURA)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VALORFACTURA)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FECHAADQUISICION)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OBSERVACIONES)
-        </th>
-        <th>............. Opciones ...........</th>
-    </tr>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <table class="table table-responsive" border="1">
+                <tr style="background-color:#3072AC; color:#ffffff;">
+                    <th>
+                        CODIGOINTERNO
+                    </th>
+                    <th>
+                        CUADADDEUBICACION
+                    </th>
+                    <th>
+                        DESCRIPCION
+                    </th>
+                    <th>
+                        MEMORIARAM
+                    </th>
+                    <th>
+                        PROCESADOR
+                    </th>
+                    <th>
+                        DISCODURO
+                    </th>
+                    <th>
+                        LICENCIADO
+                    </th>
+                    <th>
+                        OFFICE
+                    </th>
+                    <th>
+                        MARCA
+                    </th>
+                    <th>
+                        MODELO
+                    </th>
+                    <th>
+                        SERIE
+                    </th>
+                    <th>
+                        PARTICULARIDAD
+                    </th>
+                    <th>
+                        ESTADO
+                    </th>
+                    <th>
+                        NODEFACTURA
+                    </th>
+                    <th>
+                        VALORFACTURA
+                    </th>
+                    <th>
+                        FECHAADQUISICION
+                    </th>
+                    <th>
+                        OBSERVACIONES
+                    </th>
+                    <th>............. Opciones ...........</th>
+                </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CODIGOINTERNO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CUADADDEUBICACION)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DESCRIPCION)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MEMORIARAM)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PROCESADOR)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DISCODURO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LICENCIADO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OFFICE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MARCA)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MODELO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SERIE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PARTICULARIDAD)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ESTADO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NODEFACTURA)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.VALORFACTURA)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FECHAADQUISICION)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OBSERVACIONES)
-            </td>
-            <td>
-                @Html.ActionLink("Editar", "Edit", new { id = item.SECUENCIAL }) |
-                @Html.ActionLink("Detalle", "Details", new { id = item.SECUENCIAL }) |
-                @Html.ActionLink("Eliminar", "Delete", new { id = item.SECUENCIAL })
-            </td>
-        </tr>
-    }
+                @foreach (var item in Model.ingresoComputador)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CODIGOINTERNO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CUADADDEUBICACION)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DESCRIPCION)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MEMORIARAM)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PROCESADOR)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DISCODURO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LICENCIADO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OFFICE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MARCA)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MODELO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SERIE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PARTICULARIDAD)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ESTADO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NODEFACTURA)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.VALORFACTURA)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FECHAADQUISICION)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OBSERVACIONES)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Editar", "Edit", new { id = item.SECUENCIAL }) |
+                            @Html.ActionLink("Detalle", "Details", new { id = item.SECUENCIAL }) |
+                            @Html.ActionLink("Eliminar", "Delete", new { id = item.SECUENCIAL })
+                        </td>
+                    </tr>
+                }
 
-</table>
+            </table>
+        </div>
+    </div>
+</div>
+@{Html.RenderPartial("_paginador", Model);}

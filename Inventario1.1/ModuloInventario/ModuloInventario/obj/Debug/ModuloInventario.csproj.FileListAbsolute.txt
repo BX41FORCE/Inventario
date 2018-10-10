@@ -310,3 +310,7 @@ C:\Users\Usuario\Desktop\Inventario\Inventario1.1\ModuloInventario\ModuloInventa
 C:\Users\Usuario\Desktop\Inventario\Inventario1.1\ModuloInventario\ModuloInventario\bin\Microsoft.AI.PerfCounterCollector.xml
 C:\Users\Usuario\Desktop\Inventario\Inventario1.1\ModuloInventario\ModuloInventario\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Usuario\Desktop\Inventario\Inventario1.1\ModuloInventario\ModuloInventario\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Usuario\Desktop\Inventario\Inventario1.1\ModuloInventario\ModuloInventario\bin\PagedList.dll
+C:\Users\Usuario\Desktop\Inventario\Inventario1.1\ModuloInventario\ModuloInventario\bin\PagedList.Mvc.dll
+C:\Users\Usuario\Desktop\Inventario\Inventario1.1\ModuloInventario\ModuloInventario\bin\PagedList.xml
+C:\Users\Usuario\Desktop\Inventario\Inventario1.1\ModuloInventario\ModuloInventario\bin\PagedList.Mvc.xml
