@@ -4,55 +4,61 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
-
-
+<br />
+<link rel="stylesheet" href="../../Scripts/fontawesome-free-5.3.1-web/css/all.min.css">
+<h2 class="text-center" style="background-color:#3072AC; color:#ffffff;">Editar Registro</h2>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>mantenimientoVarios</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.SECUENCIAL)
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.TIPO, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.TIPO, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.TIPO, "", new { @class = "text-danger" })
-            </div>
-        </div>
+<div class="form-horizontal">
+    <h4>Mantenimiento de Equipos Varios</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.SECUENCIAL)
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.RESPONSABLE, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.RESPONSABLE, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.RESPONSABLE, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.CODIGOINTERNO, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.CODIGOINTERNO, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.CODIGOINTERNO, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
-            </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.TIPO, htmlAttributes: new { @class = "control-label col-md-2", id = "Tipo" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TIPO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TIPO, "", new { @class = "text-danger" })
         </div>
     </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.RESPONSABLE, htmlAttributes: new { @class = "control-label col-md-2", id = "Responsable" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.RESPONSABLE, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.RESPONSABLE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CODIGOINTERNO, htmlAttributes: new { @class = "control-label col-md-2", id = "Codigo" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CODIGOINTERNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CODIGOINTERNO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" value="Save" class="btn btn-outline-warning"><i class="fas fa-save"></i> Guardar</button>
+        </div>
+    </div>
+</div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Volver", "Index")
 </div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+<script>
+    $('#Tipo').text('Tipo');
+    $('#Responsable').text('Responsable');
+    $('#Codigo').text('C\u00F3digo Interno');
+</script>
