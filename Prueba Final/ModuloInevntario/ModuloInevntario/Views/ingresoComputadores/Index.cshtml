@@ -13,55 +13,55 @@
     <thead class="thead-dark">
         <tr>
             <th>
-                Código
+                CODIGOINTERNO
             </th>
             <th>
-                Ciudad
+                CUADADDEUBICACION
             </th>
             <th>
-                Descripción
+                DESCRIPCION
             </th>
             <th>
-                RAM
+                MEMORIARAM
             </th>
             <th>
-                Procesador
+                PROCESADOR
             </th>
             <th>
-                Disco
+                DISCODURO
             </th>
             <th>
-                Licenciado
+                LICENCIADO
             </th>
             <th>
-                Office
+                OFFICE
             </th>
             <th>
-                Marca
+                MARCA
             </th>
             <th>
-                Modelo
+                MODELO
             </th>
             <th>
-                Serie
+                SERIE
             </th>
             <th>
-                Particularidad
+                PARTICULARIDAD
             </th>
             <th>
-                Estado
+                ESTADO
             </th>
             <th>
-                NºFactura
+                NODEFACTURA
             </th>
             <th>
-                Valor
+                VALORFACTURA
             </th>
             <th>
-                Fecha
+                FECHAADQUISICION
             </th>
             <th>
-                Observaciones
+                OBSERVACIONES
             </th>
             <th>.............Opciones...........</th>
         </tr>
@@ -122,9 +122,9 @@
                     @Html.DisplayFor(modelItem => item.OBSERVACIONES)
                 </td>
                 <td>
-                    @Html.ActionLink("Editar", "Edit", new { id = item.SECUENCIAL }) |
-                    @Html.ActionLink("Detalle", "Details", new { id = item.SECUENCIAL }) |
-                    @Html.ActionLink("Eliminar", "Delete", new { id = item.SECUENCIAL })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.SECUENCIAL }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.SECUENCIAL }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.SECUENCIAL })
                 </td>
             </tr>
         }
