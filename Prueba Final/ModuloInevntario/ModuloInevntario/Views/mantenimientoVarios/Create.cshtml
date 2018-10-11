@@ -1,7 +1,9 @@
 ﻿@model ModuloInevntario.Models.mantenimientoVarios
 
 @{
-    ViewBag.Title = "Create";
+                /**/
+
+                ViewBag.Title = "Create";
 }
 <br />
 <script src="~/Scripts/jquery-3.3.1.js"></script>
@@ -12,40 +14,48 @@
 {
     @Html.AntiForgeryToken()
 
-<div class="form-horizontal">
-    <h4>Mantenimiento de Equipos Varios</h4>
-    <hr />
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(model => model.TIPO, htmlAttributes: new { @class = "control-label col-md-2", id = "Tipo" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.TIPO, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.TIPO, "", new { @class = "text-danger" })
+    <div class="form-horizontal">
+        <h4>Mantenimiento de Equipos Varios</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.TIPO, htmlAttributes: new { @class = "control-label col-md-2", id = "Tipo" })
+            <div class="col-md-10">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-tasks fa-1x"></i></span>
+                    @Html.EditorFor(model => model.TIPO, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TIPO, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.RESPONSABLE, htmlAttributes: new { @class = "control-label col-md-2", id = "Responsable" })
+            <div class="col-md-10">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-user fa-1x"></i></span>
+                    @Html.EditorFor(model => model.RESPONSABLE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.RESPONSABLE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.RESPONSABLE, htmlAttributes: new { @class = "control-label col-md-2", id = "Responsable" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.RESPONSABLE, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.RESPONSABLE, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.CODIGOINTERNO, htmlAttributes: new { @class = "control-label col-md-2", id = "Codigo" })
+            <div class="col-md-10">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-key fa-1x"></i></span>
+                    @Html.EditorFor(model => model.CODIGOINTERNO, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CODIGOINTERNO, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.CODIGOINTERNO, htmlAttributes: new { @class = "control-label col-md-2", id = "Codigo" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.CODIGOINTERNO, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.CODIGOINTERNO, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" value="Create" class="btn btn-outline-success"><i class="fas fa-toolbox"></i> Mantenimiento</button>
+            </div>
         </div>
     </div>
-
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <button type="submit" value="Create" class="btn btn-outline-success"><i class="fas fa-toolbox"></i> Mantenimiento</button>
-        </div>
-    </div>
-</div>
 }
 
 <div>
