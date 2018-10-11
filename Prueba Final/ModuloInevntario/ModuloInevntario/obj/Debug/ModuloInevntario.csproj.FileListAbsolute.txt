@@ -401,7 +401,6 @@ C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloIn
 C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\bin\es\System.Web.WebPages.resources.dll
 C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\obj\Debug\ModuloInevntario.csprojAssemblyReference.cache
 C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\obj\Debug\ModuloInevntario.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\obj\Debug\ModuloInevntario.csproj.CopyComplete
 C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\obj\Debug\ModuloInevntario.dll
