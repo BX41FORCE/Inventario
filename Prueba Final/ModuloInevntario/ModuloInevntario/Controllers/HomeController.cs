@@ -26,5 +26,10 @@ namespace ModuloInevntario.Controllers
         {
             return View();
         }
+
+        public ActionResult Disponibilidad()
+        {
+            return View();
+        }
     }
 }

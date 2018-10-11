@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Disponibilidad</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Computadores', 'Cantidad'],
+                ['Total', 72],
+                ['Asignados', 51]
+            ]);
+
+            var options = {
+                title: 'Computadores - Laptops'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Equipos', 'Cantidad'],
+                ['Total', 34],
+                ['Asignados', 18]
+            ]);
+
+            var options = {
+                title: 'Articulos Varios'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+    <h3 class="text-center">Disponibilidad</h3>
+    <div class="row bg">
+        <div class="col-sm-6">
+            <div id="piechart" style="width: 800px; height: 500px;"></div>
+        </div>
+        <div class="col-sm-6">
+            <div id="piechart1" style="width: 800px; height: 500px;"></div>
+        </div>
+    </div>
+</body>
+</html>
