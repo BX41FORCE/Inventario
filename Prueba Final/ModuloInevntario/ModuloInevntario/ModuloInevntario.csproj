@@ -299,6 +299,7 @@
     <Content Include="Views\Home\SeleccionIngreso.cshtml" />
     <Content Include="Views\Home\SeleccionAsignacion.cshtml" />
     <Content Include="Views\Home\SeleccionMantenimineto.cshtml" />
+    <Content Include="Views\Home\Disponibilidad.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
