@@ -405,4 +405,3 @@ C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloIn
 C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\obj\Debug\ModuloInevntario.csproj.CopyComplete
 C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\obj\Debug\ModuloInevntario.dll
 C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\obj\Debug\ModuloInevntario.pdb
-C:\Users\Administrador\Desktop\Inventario\Prueba Final\ModuloInevntario\ModuloInevntario\obj\Debug\ModuloInevntario.csprojAssemblyReference.cache

@@ -6,8 +6,6 @@
     <script src="~/Scripts/Mapa Ecuador/jquery-jvectormap-2.0.3.css"></script>
     <script src="~/Scripts/Mapa Ecuador/jquery-jvectormap-2.0.3.min.js"></script>
     <script src="~/Scripts/Mapa Ecuador/Mapa.Ecuador.js"></script>
-    <br />
-    <p></p>
     <meta name="viewport" content="width=device-width" />
     <title>Disponibilidad</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -34,6 +32,8 @@
     </script>
 </head>
 <body>
+    <br />
+    <p></p>
     <h1 class="text-left">Disponibilidad</h1>
     <div class="row bg">
         <div id="world-map" style="width: 100px; height: 100px; zoom: 2;"></div>
@@ -70,10 +70,9 @@
     }
 </script>
 <script>
-
     $('#world-map').vectorMap({
         map: 'Ecuador',
-        backgroundColor: '#b3d1ff',
+        backgroundColor: '#9D9EA0',
         series: {
             regions: [{
                 values: { "c0": "1", "c1": "2" },
@@ -92,7 +91,7 @@
 
             },
             hover: {
-                fill: "#faa432",
+                fill: "#0051A3",
                 "fill-opacity": "1"
 
             }
